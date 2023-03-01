@@ -5,27 +5,41 @@
     min-height: 100vh;
     width: 100%;
 }
-header {
+.header {
     display: flex;
     justify-content: space-between;
     gap: 20%;
-}
-.nav {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    &__ul {
-        justify-content: end;
-        justify-content: space-between;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: row;
+    &__logo {
+        font-family: 'Crimson Pro';
+        border: 1px solid;
+        font-size: 14px;
+        padding: 8px;
+        text-transform: uppercase;
     }
-}
-.logo {
-    font-family: 'Crimson Pro';
-    border: 1px solid;
-    font-size: 14px;
-    padding: 8px;
-    text-transform: uppercase;
+    &__nav {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        font-size: 18px;
+        &__list {
+            display: flex;
+            flex-direction: row;
+            display:none;
+            @media screen and (max-width: 630px) {
+                justify-content: end;
+                justify-content: space-between;
+                flex-grow: 1;
+            }
+        }
+    }
+    &__burger {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        display: none;
+        @media screen and (max-width: 630px) {
+            display: block;
+        }
+    }
 }
