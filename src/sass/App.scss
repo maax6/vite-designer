@@ -9,6 +9,9 @@ body,
 #app > div {
     height: 100%;
 }
+body{
+    position: relative;
+}
 ol,
 ul {
     list-style: none;
@@ -23,12 +26,11 @@ ul {
 }
 .head {
     width: 100%;
-    min-height: 4.375em;
+    height: 4.375em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &__logo {
-        align-self: flex-start;
         font-family: 'Crimson Pro';
         border: 1px solid;
         font-size: 14px;
@@ -37,60 +39,83 @@ ul {
         margin-right: 40px;
     }
     &__nav {
-        font-size: 18px;
         padding: 0;
         display: flex;
+        margin: 0;
         @media screen and (max-width: 880px) {
             font-size: 14px;
+            display: none;
+        }
+
+        &__active {
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                line-height: 2em;
+                text-align: center;
+                background-color: red;
+height: 100vh;
+
+                flex: 1 1;
+                gap: 2em;
+
+            }
         }
         &__link {
-            padding: 0 1.5rem 0 0;
+            max-width: 100%;
+            font-weight: 700;
+            padding: 0 1.5rem;
             transition: 400ms ease;
         }
     }
 
-    &__burger {
+    &__menuIcon {
         position: fixed;
         cursor: pointer;
-        display: flex;
-        width: 40px;
-        height: 40px;
+        display: none;
+        width: 28px;
+        height: 28px;
         flex-direction: column;
         justify-content: center;
-
-        position: fixed;
-
-        top: 2em;
         right: 2em;
-        top: 50%;
-        right: 50%;
-
-        &__line {
+        top: 2em;
+        background: transparent;
+        @media screen and (max-width: 768px) {
+            display:flex;
+        }
+        &__burger {
             &,
             &::before,
             &::after {
+                transition: 0.375s;
                 width: 100%;
-                height: 6px;
+                height: 4px;
                 background: rgb(255, 255, 255);
+                border-radius: 20%;
             }
             &::before,
-            &::after{
-                content:"";
+            &::after {
+                content: '';
                 position: absolute;
             }
-            &::before{
-                transform: translateY(-16px);
-            }            //     border: 2px solid #fff;
-            &::after{
-                transform: translateY(16px);
-            }            //     border: 2px solid #fff;
-            //     width: 100%;
-            //     &:before {
-            //         content: '';
-            //         border-top: 2px solid #d81313;
-            //         width: 100%;
-
-            // }
+            &::before {
+                transform: translateY(-10px);
+            }
+            &::after {
+                transform: translateY(10px);
+            }
+            &__active {
+                background: rgba(0, 0, 0, 0);
+            }
+            &__active::before {
+                transform: rotate(45deg);
+                border-radius: 20%;
+            }
+            &__active::after {
+                transform: rotate(135deg);
+                border-radius: 20%;
+            }
         }
     }
 }

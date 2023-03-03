@@ -14,7 +14,7 @@ export function Nav() {
         <div className="App">
             <header className="head">
                 <h1 className="head__logo">This Interior</h1>
-                <ul className={`head__nav ${menuOpen ? 'active' : ''}`}>
+                <ul className={`head__nav ${ menuOpen ? "head__nav__active" : ""}`}>
                     <li className="head__nav__link">
                         <a href="/Home" className="head__nav__link__item">
                             Home
@@ -37,13 +37,14 @@ export function Nav() {
                     </li>
                 </ul>
                 <div
-                    className={`head__burger ${menuOpen ? "open" : ""}`}
+                    className="head__menuIcon"
                     aria-expanded={menuOpen}
                     onClick={toggleMenu}
                 >
-                    <span className="head__burger__line"></span>
-                    {/* <span className="head__burger__line"></span>
-                    <span className="head__burger__line"></span> */}
+                    <span className={`head__menuIcon__burger ${ menuOpen ? "head__menuIcon__burger__active" : ""}`}
+                    ></span>
+                    {/* <span className="head__menuIcon__burger"></span>
+                    <span className="head__menuIcon__burger"></span> */}
                 </div>
             </header>
             <main className="main"></main>
