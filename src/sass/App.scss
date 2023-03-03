@@ -1,45 +1,96 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body,
+#app,
+#app > div {
+    height: 100%;
+}
+ol,
+ul {
+    list-style: none;
+}
 #root {
+    display: flex;
     max-width: 1280px;
+    flex-direction: column;
     margin: 0 auto;
     padding: 2rem;
     min-height: 100vh;
-    width: 100%;
 }
-.header {
+.head {
+    width: 100%;
+    min-height: 4.375em;
     display: flex;
     justify-content: space-between;
-    gap: 20%;
+    align-items: center;
     &__logo {
+        align-self: flex-start;
         font-family: 'Crimson Pro';
         border: 1px solid;
         font-size: 14px;
         padding: 8px;
         text-transform: uppercase;
+        margin-right: 40px;
     }
     &__nav {
-        display: flex;
-        flex-grow: 1;
-        align-items: center;
         font-size: 18px;
-        &__list {
-            display: flex;
-            flex-direction: row;
-            // display:none;
-            @media screen and (max-width: 630px) {
-                justify-content: end;
-                justify-content: space-between;
-                flex-grow: 1;
-            }
+        padding: 0;
+        display: flex;
+        @media screen and (max-width: 880px) {
+            font-size: 14px;
+        }
+        &__link {
+            padding: 0 1.5rem 0 0;
+            transition: 400ms ease;
         }
     }
+
     &__burger {
+        position: fixed;
+        cursor: pointer;
+        display: flex;
         width: 40px;
         height: 40px;
-        background: transparent;
-        border: none;
-        display: none;
-        @media screen and (max-width: 630px) {
-            display: block;
+        flex-direction: column;
+        justify-content: center;
+
+        position: fixed;
+
+        top: 2em;
+        right: 2em;
+        top: 50%;
+        right: 50%;
+
+        &__line {
+            &,
+            &::before,
+            &::after {
+                width: 100%;
+                height: 6px;
+                background: rgb(255, 255, 255);
+            }
+            &::before,
+            &::after{
+                content:"";
+                position: absolute;
+            }
+            &::before{
+                transform: translateY(-16px);
+            }            //     border: 2px solid #fff;
+            &::after{
+                transform: translateY(16px);
+            }            //     border: 2px solid #fff;
+            //     width: 100%;
+            //     &:before {
+            //         content: '';
+            //         border-top: 2px solid #d81313;
+            //         width: 100%;
+
+            // }
         }
     }
 }

@@ -1,6 +1,6 @@
 import './sass/App.scss'
-import { HeadNav } from './components/HeadNav'
+import { Nav } from './Components/Nav'
 
 export default function App() {
-    return <HeadNav />
+    return <Nav />
 }
