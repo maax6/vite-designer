@@ -1,47 +1,85 @@
 import { useState } from 'react'
 
 export function Nav() {
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [Open, setOpen] = useState(false)
+    const [activePage, setActivePage] = useState('')
 
     function toggleMenu() {
-        setMenuOpen((prevMenuOpen) => !prevMenuOpen)
+        setOpen((prevOpen) => !prevOpen)
     }
 
-    function closeMenu() {
-        setMenuOpen(!menuOpen)
+    function handlePageClick(pageName, event) {
+        event.preventDefault();
+        setActivePage(pageName)
     }
+
+    // function closeMenu() {
+    //     setOpen(!Open)
+    // }
     return (
         <div className="App">
             <header className="head">
                 <h1 className="head__logo">This Interior</h1>
-                <ul className={`head__nav ${ menuOpen ? "head__nav__active" : ""}`}>
-                    <li className="head__nav__link">
-                        <a href="/Home" className="head__nav__link__item">
+                <ul className={`head__nav ${Open ? 'head__nav--active' : ''}`}>
+                    <li
+                        className={`head__nav__link ${
+                            activePage == 'Home' ? 'head__nav__link--active' : ''
+                        }`}
+                    >
+                        <a
+                            href="/Home"
+                            className="head__nav__link__item"
+                            onClick={() => setActivePage('Home')}
+                        >
+                            {' '}
                             Home
                         </a>
                     </li>
-                    <li className="head__nav__link">
-                        <a href="/Collection" className="head__nav__link__item">
+                    <li
+                        className={`head__nav__link ${
+                            activePage == 'Collection' ? 'head__nav__link__active' : ''
+                        }`}
+                    >
+                        <a
+                            href="/Collection"
+                            className="head__nav__link__item"
+                            onClick={() => setActivePage('Collection')}
+                        >
                             Collection
                         </a>
                     </li>
-                    <li className="head__nav__link">
-                        <a href="/About" className="head__nav__link__item">
+                    <li
+                        className={`head__nav__link ${
+                            activePage === 'About' ? 'head__nav__link--active' : ''
+                        }`}
+                    >
+                        <a
+                            href="/About"
+                            className="head__nav__link__item"
+                            onClick={() => setActivePage('About')}
+                        >
                             About
                         </a>
                     </li>
-                    <li className="head__nav__link">
-                        <a href="/Collection" className="head__nav__link__item">
+                    <li
+                        className={`head__nav__link ${
+                            activePage === 'Contact' ? 'head__nav__link--active' : ''
+                        }`}
+                    >
+                        <a
+                            href="/Contact"
+                            className="head__nav__link__item"
+                            onClick={() => setActivePage('Contact')}
+                        >
                             Contact
                         </a>
                     </li>
                 </ul>
-                <div
-                    className="head__menuIcon"
-                    aria-expanded={menuOpen}
-                    onClick={toggleMenu}
-                >
-                    <span className={`head__menuIcon__burger ${ menuOpen ? "head__menuIcon__burger__active" : ""}`}
+                <div className="head__menuIcon" aria-expanded={Open} onClick={toggleMenu}>
+                    <span
+                        className={`head__menuIcon__burger ${
+                            Open ? 'head__menuIcon__burger--open' : ''
+                        }`}
                     ></span>
                     {/* <span className="head__menuIcon__burger"></span>
                     <span className="head__menuIcon__burger"></span> */}

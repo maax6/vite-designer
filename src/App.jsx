@@ -1,4 +1,4 @@
-import './sass/App.scss'
+import './Sass/App.scss'
 import { Nav } from './Components/Nav'
 
 export default function App() {
