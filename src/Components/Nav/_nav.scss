@@ -41,11 +41,10 @@
 			  display: flex;
 			  max-width: 100%;
 			  font-weight: 700;
-			  padding: 0 1.5rem;
+			  margin: 0 1.5rem;
 			  transition: 400ms ease;
 			  &--active{
-					text-decoration: underline rgba(255, 255, 255, 0.87);
-					background-color: red;
+				border-bottom: 2px solid #ffffff;
 			  }
 		 }
 	}
