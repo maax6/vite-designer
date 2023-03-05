@@ -15,7 +15,6 @@ export function Nav() {
 
     return (
        <>
-       
        <header className="head">
            <h1 className="head__logo">This Interior</h1>
            <ul className={`head__nav ${Open ? 'head__nav--active' : ''}`}>
@@ -79,13 +78,9 @@ export function Nav() {
                        Open ? 'head__menuIcon__burger--open' : ''
                    }`}
                ></span>
-               {/* <span className="head__menuIcon__burger"></span>
-               <span className="head__menuIcon__burger"></span> */}
            </div>
        </header>
-       <main className="main"></main>
-       <footer className="footer"></footer>
+
        </>
-      
     )
 }

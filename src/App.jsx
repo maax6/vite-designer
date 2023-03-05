@@ -1,6 +1,7 @@
+
 import './Sass/App.scss'
-import { Nav } from './Components/Nav'
+import { Home } from './Pages/Home'
 
 export default function App() {
-    return <Nav />
+    return <Home />
 }
