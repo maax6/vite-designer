@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  max-width: 1280px;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+}/*# sourceMappingURL=App.min.css.map */

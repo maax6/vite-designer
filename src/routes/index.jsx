@@ -1,21 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from '../pages/Home/Home'
-import LayoutDefault from '../layouts/Default'
+import { Home } from '../Pages/Home'
+import{ LayoutDefault } from '../layouts/Default'
 
-const Router = () => {
+export function Router() {
    return (
       <BrowserRouter>
          <Routes>
             <Route element={<LayoutDefault />}>
                <Route exact path="/" element={<Home />} />
-               <Route path="/Collection" element={<Collection />} />
-               <Route path="/About" element={<About />} />
-               <Route path="/Contact" element={<Contact />} />
+               <Route path="/Collection" element={<Home />} />
+               <Route path="/About" element={<Home />} />
+               <Route path="/Contact" element={<Home />} />
             </Route>
          </Routes>
       </BrowserRouter>
    )
 }
-
-export default Router
