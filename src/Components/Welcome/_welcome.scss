@@ -1,36 +1,46 @@
 .welcome {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 400px) {
+    @media (max-width: 400px) {
     }
-	 &__title{
-		 font-family: 'Lora', serif;
-	}
-	&__presentation {
-		max-width: 410px;
-	}
-	&__text {
-		font-family: 'Montserrat';
+    &__title {
+        font-family: 'Lora', serif;
         font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
-        margin-top: 40px;
-        margin-bottom: 48px;
-    }
-    &__link {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		gap: 1em;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 22px;
+        font-weight: 500;
+		  font-size: 36px;
+		  @media (min-width: 768px){
+			font-size: 48px;
+		  }
+		}
+		&__presentation {
+			font-size: 14px;
+			@media (min-width: 768px){
+				font-size: 29px;
+			}
+
+		}
+		&__text {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 400;
+			margin-top: 40px;
+			margin-bottom: 48px;
+			@media screen and (min-width: 768px){
+			}
+		}
+		&__link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
     }
 
     &__arrow {
-		  font-size: 28px;
+        font-size: 28px;
     }
 }
