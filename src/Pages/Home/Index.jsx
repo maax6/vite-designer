@@ -1,9 +1,8 @@
-import { Nav } from '../../Components/Nav/index.jsx'
+import { Welcome } from "../../Components/Welcome"
 export function Home() {
     return (
         <>
-            <div className='foo'>foo</div>
-            <Nav />
+            <Welcome />
         </>
     )
 }
