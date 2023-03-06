@@ -1,5 +1,5 @@
 :root {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "lora", serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -129,4 +129,47 @@ body {
 .head__menuIcon__burger--open::after {
   transform: rotate(135deg);
   border-radius: 20%;
+}
+
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+}
+.welcome__title {
+  font-family: "Lora", serif;
+}
+.welcome__presentation {
+  max-width: 410px;
+}
+.welcome__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+.welcome ~ span {
+  background-color: red;
+}
+.welcome__arrow {
+  vertical-align: middle;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 17px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.phantom {
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
 }/*# sourceMappingURL=index.min.css.map */

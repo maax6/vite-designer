@@ -1,0 +1,36 @@
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 400px) {
+    }
+	 &__title{
+		 font-family: 'Lora', serif;
+	}
+	&__presentation {
+		max-width: 410px;
+	}
+	&__text {
+		font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 40px;
+        margin-bottom: 48px;
+    }
+    &__link {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1em;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+    }
+
+    &__arrow {
+		  font-size: 28px;
+    }
+}

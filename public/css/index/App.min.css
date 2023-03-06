@@ -22,4 +22,8 @@ ul {
   padding: 2rem;
   min-height: 100vh;
   position: relative;
+}
+
+.foo {
+  background-color: red;
 }/*# sourceMappingURL=App.min.css.map */
