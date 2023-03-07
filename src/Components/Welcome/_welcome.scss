@@ -1,7 +1,9 @@
 .welcome {
     display: flex;
+	 flex-direction: column;
     flex-wrap: wrap;
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
+		flex-direction: row;
     }
     &__title {
         font-family: 'Lora', serif;
