@@ -1,9 +1,9 @@
 import './_welcome.scss'
 import { MdArrowRightAlt } from 'react-icons/md'
 import { IconContext } from 'react-icons'
+import interior from'../../img/interior.png'
 
 export function Welcome() {
-
     return (
         <div className="welcome">
             <div className="welcome__presentation">
@@ -12,13 +12,16 @@ export function Welcome() {
                     A full-Service residential & commercial interior design and staging company
                     offering professional organizing & eco-services.
                 </div>
-
                 <a className="welcome__link" href="/About">
                     Read More
                     <IconContext.Provider value={{ className: 'welcome__arrow' }}>
-                            <MdArrowRightAlt />
+                        <MdArrowRightAlt />
                     </IconContext.Provider>
                 </a>
+            </div>
+            <div className="welcome__portfolio">
+            <div className='welcome__imageContainer' style={{ backgroundImage: `url(${interior})` }}></div>
+
             </div>
         </div>
     )

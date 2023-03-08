@@ -1,48 +1,55 @@
 .welcome {
     display: flex;
-	 flex-direction: column;
+    flex-direction: column;
     flex-wrap: wrap;
     @media (max-width: 768px) {
-		flex-direction: row;
+        flex-direction: row;
     }
     &__title {
         font-family: 'Lora', serif;
         font-style: normal;
         font-weight: 500;
-		  font-size: 36px;
-		  @media (min-width: 768px){
-			font-size: 48px;
-		  }
-		}
-		&__presentation {
-			font-size: 14px;
-			@media (min-width: 768px){
-				font-size: 29px;
-			}
-
-		}
-		&__text {
-			font-family: 'Montserrat';
-			font-style: normal;
-			font-weight: 400;
-			margin-top: 40px;
-			margin-bottom: 48px;
-			@media screen and (min-width: 768px){
-			}
-		}
-		&__link {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1em;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 36px;
+        @media (min-width: 768px) {
+            font-size: 48px;
+        }
     }
+    &__presentation {
+        font-size: 14px;
+        @media (min-width: 768px) {
+            font-size: 29px;
+        }
 
-    &__arrow {
-        font-size: 28px;
+        &__text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            margin-top: 40px;
+            margin-bottom: 48px;
+            @media screen and (min-width: 768px) {
+            }
+        }
+        &__link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1em;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__arrow {
+            font-size: 28px;
+        }
     }
+	 &__portfolio{
+		display: flex;
+		flex-direction: column;
+		&__imageContainer{
+    
+		}
+	 }
 }
