@@ -45,11 +45,11 @@
             font-size: 28px;
         }
     }
-	 &__portfolio{
-		display: flex;
-		flex-direction: column;
-		&__imageContainer{
-    
-		}
-	 }
+    &__portfolio {
+        display: flex;
+        flex-direction: column;
+        &__imageContainer {
+            height: 100%;
+        }
+    }
 }

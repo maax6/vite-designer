@@ -1,9 +1,10 @@
 import './_welcome.scss'
 import { MdArrowRightAlt } from 'react-icons/md'
 import { IconContext } from 'react-icons'
-import interior from'../../img/interior.png'
+import interior from '../../img/interior.png'
 
 export function Welcome() {
+  const urlInterior = interior;
     return (
         <div className="welcome">
             <div className="welcome__presentation">
@@ -20,8 +21,8 @@ export function Welcome() {
                 </a>
             </div>
             <div className="welcome__portfolio">
-            <div className='welcome__imageContainer' style={{ backgroundImage: `url(${interior})` }}></div>
-
+            <div className='welcome__imageContainer' style={{ backgroundImage: `url(urlInterior)` }}></div>
+                {/* <img src={urlInterior} alt="" /> */}
             </div>
         </div>
     )
