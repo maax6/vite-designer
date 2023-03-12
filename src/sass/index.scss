@@ -1,36 +1,28 @@
 :root {
-  font-family: 'Montserrat','lora',serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #181719;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-family: 'Montserrat', 'lora', serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #181719;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration: inherit;
-  padding-bottom: 8px;
-  border: 2px solid #181719 ;
+    text-decoration: inherit;
 }
 
 a:hover {
-  color: #a4b0be;
+    color: #a4b0be;
 }
 
 body {
-  margin: 0;
-  display: block;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    display: block;
+    min-width: 320px;
+    min-height: 100vh;
 }
-
-@import '../Components/Nav/_nav.scss';
-
-@import '../Components/Footer/_footer.scss';
