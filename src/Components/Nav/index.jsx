@@ -1,5 +1,6 @@
 	import './_nav.scss'
 	import { useState } from 'react'
+	import { NavLink } from 'react-router-dom'
 
 	export function Nav() {
 		const [Open, setOpen] = useState(false)
@@ -23,52 +24,52 @@
 								activePage === 'Home' ? 'head__nav__item--active' : ''
 							}`}
 						>
-							<a
-								href="/Home"
+							<NavLink
+								to="/Home"
 								className="head__nav__item__link"
 								onClick={() => handlePageClick('Home')}
 							>
 								Home
-							</a>
+							</NavLink>
 						</li>
 						<li
 							className={`head__nav__item ${
 								activePage === 'Collection' ? 'head__nav__item--active' : ''
 							}`}
 						>
-							<a
-								href="/Collection"
+							<NavLink
+								to="/Collection"
 								className="head__nav__item__link"
 								onClick={() => handlePageClick('Collection')}
 							>
 								Collection
-							</a>
+							</NavLink>
 						</li>
 						<li
 							className={`head__nav__item ${
 								activePage === 'About' ? 'head__nav__item--active' : ''
 							}`}
 						>
-							<a
-								href="/About"
+							<NavLink
+								to="/About"
 								className="head__nav__item__link"
 								onClick={() => handlePageClick('About')}
 							>
 								About
-							</a>
+							</NavLink>
 						</li>
 						<li
 							className={`head__nav__item ${
 								activePage === 'Contact' ? 'head__nav__item--active' : ''
 							}`}
 						>
-							<a
-								href="/Contact"
+							<NavLink
+								to="/Contact"
 								className="head__nav__item__link"
 								onClick={() => handlePageClick('Contact')}
 							>
 								Contact
-							</a>
+							</NavLink>
 						</li>
 					</ul>
 					<div className="head__menuIcon" aria-expanded={Open} onClick={toggleMenu}>
