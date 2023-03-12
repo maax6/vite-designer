@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons'
 import interior from '../../img/interior.png'
 
 export function Welcome() {
-  const urlInterior = interior;
+ 
     return (
         <div className="welcome">
             <div className="welcome__presentation">
