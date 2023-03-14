@@ -1,6 +1,8 @@
 import './_welcome.scss'
 import { MdArrowRightAlt } from 'react-icons/md'
 import { IconContext } from 'react-icons'
+import { NavLink } from 'react-router-dom'
+
 import interior from '../../img/interior.png'
 
 export function Welcome() {
@@ -13,12 +15,12 @@ export function Welcome() {
                     A full-Service residential & commercial interior design and staging company
                     offering professional organizing & eco-services.
                 </div>
-                <a className="welcome__link" href="/About">
+                <NavLink className="welcome__link" to="/About">
                     Read More
                     <IconContext.Provider value={{ className: 'welcome__arrow' }}>
                         <MdArrowRightAlt />
                     </IconContext.Provider>
-                </a>
+                </NavLink>
             </div>
             <div className="welcome__portfolio">
             <div className='welcome__imageContainer' style={{ backgroundImage: `url(urlInterior)` }}></div>

@@ -31,14 +31,16 @@
         }
         &__link {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
             gap: 1em;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 50px;
             line-height: 22px;
+            font-weight: 500;
+            text-decoration: inherit;
+            color: #fff;
         }
 
         &__arrow {
