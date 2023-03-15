@@ -1,73 +1,75 @@
 .welcome {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-  
-	@media (max-width: 768px) {
-	  flex-direction: row;
-	}
-  
-	&__title {
-	  font-family: 'Lora', serif;
-	  font-style: normal;
-	  font-weight: 500;
-	  font-size: 36px;
-  
-	  @media (min-width: 768px) {
-		font-size: 48px;
-	  }
-	}
-  
-	&__presentation {
-		display: flex;
-		flex-direction: column;
-	  font-size: 14px;
-	  gap: 1em;
-  
-	  @media (min-width: 768px) {
-		font-size: 29px;
-	  }
-  
-	  &__text {
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 400;
-		margin-top: 40px;
-		margin-bottom: 48px;
-  
-		@media screen and (min-width: 768px) {
-		}
-	  }
-  
-	  .welcome__link {
-		display: flex;
-		align-items: center;
-		gap: 1em;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 22px;
-		font-weight: 500;
-		text-decoration: inherit;
-		color: #fff;
-		@media screen and (min-width : 768px) {
-			font-size:18px;
-		}
-	  }
-  
-	  &__arrow {
-		font-size: 28px;
-	  }
-	}
-  
-	&__portfolio {
-	  display: flex;
-	  flex-direction: column;
-  
-	  &__imageContainer {
-		height: 100%;
-	  }
-	}
-  }
-  
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    flex-grow: 2;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+
+    &__title {
+        font-family: 'Lora', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+
+        @media (min-width: 768px) {
+            font-size: 48px;
+        }
+    }
+
+    &__presentation {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 1em;
+
+        @media (min-width: 768px) {
+            font-size: 29px;
+        }
+
+        &__text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            margin-top: 40px;
+            margin-bottom: 48px;
+
+            @media screen and (min-width: 768px) {
+            }
+        }
+
+        .welcome__link {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            text-decoration: inherit;
+            color: #fff;
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+            }
+        }
+
+        &__arrow {
+            font-size: 28px;
+        }
+    }
+    &__portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+    &__imageContainer {
+        width: 100%;
+        min-width: 200px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+}

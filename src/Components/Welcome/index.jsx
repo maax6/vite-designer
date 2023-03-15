@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom'
 import interior from '../../img/interior.png'
 
 export function Welcome() {
- 
     return (
         <div className="welcome">
             <div className="welcome__presentation">
@@ -22,8 +21,13 @@ export function Welcome() {
                 </NavLink>
             </div>
             <div className="welcome__portfolio">
-            <div className='welcome__imageContainer' style={{ backgroundImage: `url(urlInterior)` }}></div>
-                {/* <img src={urlInterior} alt="" /> */}
+                <div
+                    className="welcome__imageContainer"
+                    style={{ backgroundImage: `url(${interior})` }}
+                >
+                    {' '}
+                </div>
+                {/* <img src={interior} alt="" /> */}
             </div>
         </div>
     )
