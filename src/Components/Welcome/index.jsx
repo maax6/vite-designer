@@ -2,7 +2,6 @@ import './_welcome.scss'
 import { MdArrowRightAlt } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 import { NavLink } from 'react-router-dom'
-
 import interior from '../../img/interior.png'
 
 export function Welcome() {
