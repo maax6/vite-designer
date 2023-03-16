@@ -8,8 +8,8 @@ export function Welcome() {
     return (
         <div className="welcome">
             <div className="welcome__presentation">
-                <h1 className="welcome__title">Modern Interior</h1>
-                <div className="welcome__text">
+                <h1 className="welcome__presentation__title">Modern Interior</h1>
+                <div className="welcome__presentation__text">
                     A full-Service residential & commercial interior design and staging company
                     offering professional organizing & eco-services.
                 </div>
@@ -21,13 +21,14 @@ export function Welcome() {
                 </NavLink>
             </div>
             <div className="welcome__portfolio">
-                <div
-                    className="welcome__imageContainer"
-                    style={{ backgroundImage: `url(${interior})` }}
-                >
-                    {' '}
+                <div className="welcome__portfolio__imgContainer">
+                    <img
+                        className="welcome__portfolio__img"
+                        src={interior}
+                        alt="designed room photo"
+                    />
+                    <div className="welcome__card"></div>
                 </div>
-                {/* <img src={interior} alt="" /> */}
             </div>
         </div>
     )

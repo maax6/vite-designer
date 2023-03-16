@@ -1,22 +1,13 @@
 .welcome {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
     // flex-wrap: wrap;
-    flex-grow: 2;
 
     @media (min-width: 992px) {
         flex-direction: row;
-    }
-
-    &__title {
-        font-family: 'Lora', serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 36px;
-
-        @media (min-width: 768px) {
-            font-size: 48px;
-        }
+        padding: 75px;
     }
 
     &__presentation {
@@ -24,34 +15,35 @@
         flex-direction: column;
         font-size: 14px;
         gap: 1em;
-
+        
         @media (min-width: 768px) {
-            font-size: 29px;
+            flex: 1;
+            display: flex;
+            font-size: 24px;
+            justify-content: center;
         }
-
-        &__text {
-            font-family: 'Montserrat';
+        &__title {
+            font-family: 'Lora', serif;
             font-style: normal;
-            font-weight: 400;
-            margin-top: 40px;
-            margin-bottom: 48px;
-
+            font-weight: 500;
+            font-size: 36px;
+            @media (min-width: 768px) {
+                font-size: 48px;
+            }
+        }
+        &__text {
+            margin-right: 20%;
             @media screen and (min-width: 768px) {
             }
         }
-
         .welcome__link {
             display: flex;
             align-items: center;
             gap: 1em;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
             line-height: 22px;
             font-weight: 500;
-            text-decoration: inherit;
             color: #fff;
+            margin-bottom: 25px;
             @media screen and (min-width: 768px) {
                 font-size: 18px;
             }
@@ -64,12 +56,14 @@
     &__portfolio {
         display: flex;
         flex-direction: column;
-    }
-    &__imageContainer {
-        width: 100%;
-        min-width: 200px;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
+        flex: 1.5;
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
+        &__imgContainer {
+        }
+        &__img {
+            width: 100%;
+        }
     }
 }
