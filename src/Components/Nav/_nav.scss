@@ -19,7 +19,7 @@
         color: #ffffff;
         background-color: #181719;
         padding: 0 4% 0 0 ;
-        gap: 80px;
+        column-gap: 200px;
         @media screen and (max-width: 768px) {
             flex-direction: column;
             position: absolute;
@@ -34,7 +34,9 @@
             display: none;
             gap: 1em;
         }
-
+        @media screen and (max-width: 1300px) {
+            gap:80px
+        }
         &--active {
             @media screen and (max-width: 768px) {
                 display: flex;

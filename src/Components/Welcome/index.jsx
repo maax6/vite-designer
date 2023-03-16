@@ -30,10 +30,19 @@ export function Welcome() {
                     />
                     <div className="welcome__card">
                         <div className="welcome__card__person">
-                            <img className='welcome__card__person__pic' src={aliza} alt="Aliza's portrait" />
-                            <div className='welcome__card__person__infos'></div>
+                            <img
+                                className="welcome__card__person__pic"
+                                src={aliza}
+                                alt="Aliza's portrait"
+                            />
+                            <div className="welcome__card__person__infos">
+                                <span className='welcome__card__person__infos__name'>Aliza Webber</span>
+                                <span className='welcome__card__person__infos__position'>Interior designer</span>
+                            </div>
                         </div>
-                        <div className="welcome__card__designedBy">Designed in 2020 by Aliza Webber</div>
+                        <div className="welcome__card__designedBy">
+                            Designed in 2020 by Aliza Webber
+                        </div>
                     </div>
                 </div>
             </div>
