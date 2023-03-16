@@ -15,7 +15,7 @@
         flex-direction: column;
         font-size: 14px;
         gap: 1em;
-        
+
         @media (min-width: 768px) {
             flex: 1;
             display: flex;
@@ -61,9 +61,33 @@
             justify-content: center;
         }
         &__imgContainer {
+            position: relative;
         }
         &__img {
             width: 100%;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #181719;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        left: 15%;
+        bottom: -20px;
+        height: 50%;
+        padding: 15%;
+        width: 80%;
+        &__person {
+            flex-direction: row;
+            &__pic {
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+            }
+            &__infos {
+                flex-direction: column;
+            }
         }
     }
 }

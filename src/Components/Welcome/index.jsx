@@ -3,6 +3,7 @@ import { MdArrowRightAlt } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 import { NavLink } from 'react-router-dom'
 import interior from '../../img/interior.png'
+import aliza from '../../img/aliza.png'
 
 export function Welcome() {
     return (
@@ -27,7 +28,13 @@ export function Welcome() {
                         src={interior}
                         alt="designed room photo"
                     />
-                    <div className="welcome__card"></div>
+                    <div className="welcome__card">
+                        <div className="welcome__card__person">
+                            <img className='welcome__card__person__pic' src={aliza} alt="Aliza's portrait" />
+                            <div className='welcome__card__person__infos'></div>
+                        </div>
+                        <div className="welcome__card__designedBy">Designed in 2020 by Aliza Webber</div>
+                    </div>
                 </div>
             </div>
         </div>

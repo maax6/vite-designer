@@ -34,17 +34,16 @@
             display: none;
             gap: 1em;
         }
-        @media screen and (min-width: 992px){
-            gap: 8rem;
-        }
+
         &--active {
             @media screen and (max-width: 768px) {
                 display: flex;
+                z-index: 50;
             }
         }
         &__item {
             display: flex;
-            justify-content: felx start;
+            justify-content: flex start;
             max-width: 100%;
             font-weight: 700;
             transition: ease;
@@ -53,11 +52,9 @@
                 font-weight: 500;
                 text-decoration: inherit;
                 color: #ffffff;
-
             }
         }
     }
-
     &__menuIcon {
         position: absolute;
         cursor: pointer;
@@ -76,6 +73,7 @@
             &,
             &::before,
             &::after {
+                z-index: 99;
                 transition: 0.375s;
                 width: 100%;
                 height: 3px;
