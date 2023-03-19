@@ -1,13 +1,14 @@
 footer {
 	position: absolute;
-    bottom: 0;
+    bottom: -60px;
 	left: 0;
 	right:0;
-    height: 17px;
+    height: 30px;
     font-family: 'Montserrat';
     font-size: 14px;
     text-align: center;
     color: #a9a9a9;
+	 padding-bottom: 20px;
 }
 // test footer https://stackoverflow.com/a/40568544/16081570
 .phantom{

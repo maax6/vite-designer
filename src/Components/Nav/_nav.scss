@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    @media (min-width: 620px) {
+        padding: 50px 0; 
+    }
     &__logo {
         font-family: 'Crimson Pro';
         border: 1px solid;
@@ -11,6 +14,12 @@
         padding: 8px;
         text-transform: uppercase;
         margin-right: 40px;
+        @media (min-width: 620px) {
+           font-size: 16px;
+        }
+        @media (min-width: 992px) {
+         font-size: 20px;
+        }
     }
     &__nav {
         display: flex;
@@ -18,8 +27,8 @@
         padding: 0;
         color: #ffffff;
         background-color: #181719;
-        padding: 0 4% 0 0 ;
-        column-gap: 200px;
+        padding: 0 ;
+        column-gap: 100px;
         @media screen and (max-width: 768px) {
             flex-direction: column;
             position: absolute;
@@ -33,9 +42,6 @@
             right: 0;
             display: none;
             gap: 1em;
-        }
-        @media screen and (max-width: 1300px) {
-            gap:80px
         }
         &--active {
             @media screen and (max-width: 768px) {
@@ -70,6 +76,10 @@
         @media screen and (max-width: 768px) {
             display: flex;
         }
+        @media (min-width: 620px) {
+         right: 40px;
+        }
+        
         &__burger {
             &,
             &::before,

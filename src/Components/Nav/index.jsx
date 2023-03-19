@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export function Nav() {
     const [Open, setOpen] = useState(false)
-    const [activePage, setActivePage] = useState('')
+    const [activePage, setActivePage] = useState('Home')
 
     function toggleMenu() {
         setOpen((prevOpen) => !prevOpen)
