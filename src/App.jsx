@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sass/App.scss'
+import './sass/App.scss'
 import { Router } from './routes'
 
 export default function App() {
