@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Home } from '../Pages/Home/index.jsx'
+import { Home } from '../Pages/Home'
 import { Error } from '../Components/Error'
 import{ LayoutDefault } from '../layouts/Default'
 
