@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Home } from '../Pages/Home'
-import { Error } from '../Components/Error'
+import { Home } from 'src/Pages/Home/index.jsx'
+import { Error } from 'src/Components/Error'
 import{ LayoutDefault } from '../layouts/Default'
 
 export function Router() {
