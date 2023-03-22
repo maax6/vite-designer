@@ -34,6 +34,7 @@
 - [React](https://reactjs.org/)
 - [SCSS](https://sass-lang.com/documentation/)
 - [Vite](https://vitejs.dev/)
+- [react-router](https://reactrouter.com/en/main)
 
 ## Features
 
