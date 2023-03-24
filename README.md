@@ -46,5 +46,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@maax6](https://{github.com/maax6})
-- Twitter [@maximedevweb](https://{twitter.com/maximedevweb})
+- GitHub [@maax6](https://github.com/maax6)
+- Twitter [@maximedevweb](https://twitter.com/maximedevweb)
